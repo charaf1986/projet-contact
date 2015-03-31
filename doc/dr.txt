@@ -1,0 +1,43 @@
+ex06
+
+17/20
+
+?
+Note: to use Sass with this application, switch the stylesheet references in the
+<head> section and uncomment the sass transformer in the pubspec.yaml file.
+
+(-1)
+un contact vide est valide?
+
+(-1)
+peut ajouter le même contact deux fois
+
+(-1)
+ne peut pas mettre à jour un contact
+
+class ContactModel extends ConceptModel {
+  static const String aContact = 'Contact';
+  Map<String, ConceptEntities> newEntries() {
+    var lstContact = new Contacts();
+    var map = new Map<String, ConceptEntities>();
+    map[aContact] = lstContact;
+    return map;
+  }
+  Contacts get contacts => getEntry(aContact);
+}
+class ContactTable {
+
+-->
+
+class ContactModel extends ConceptModel {
+  static const String aContact = 'Contact';
+  Map<String, ConceptEntities> newEntries() {
+    var lstContact = new Contacts();
+    var map = new Map<String, ConceptEntities>();
+    map[aContact] = lstContact;
+    return map;
+  }
+  Contacts get contacts => getEntry(aContact);
+}
+
+class ContactTable {
